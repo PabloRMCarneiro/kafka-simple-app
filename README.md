@@ -10,6 +10,10 @@
 
 `cd kafka_2.13-3.6.0`
 
+## Criar o tópico
+
+`bin/kafka-topics.sh --create --topic TOPIC_NAME --bootstrap-server localhost:9092`
+
 ## Iniciar o Zookeeper
 
 `bin/zookeeper-server-start.sh config/zookeeper.properties`
@@ -17,11 +21,7 @@
 ## Iniciar o Kafka
 
 `bin/kafka-server-start.sh config/server.properties`
-
-## Criar o tópico
-
-`bin/kafka-topics.sh --create --topic TOPIC_NAME --bootstrap-server localhost:9092`
-
+r
 Para o código foi utilizado o tópico `sensor_data`
 
 # Executar o Produtor
